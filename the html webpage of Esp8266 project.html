@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<title>Proiect Diplomă</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+
+
+<style>
+.w3-button {width:25%;height:20%}
+.w3-panel {width:60%}
+.w3-card-4 {width:400px;}
+
+.w3-container w3-card-4 w3-light-grey {box-shadow: 0px; 0px}
+body {
+	background-image: url("https://www.tuv.com/media/romania/parteneri/Universitatea_Aurel_Vlaicu_Arad_TextwithImageflexible.jpg"); 
+	background-repeat: no-repeat;
+	background-position:92% 23%;
+	background-blend-mode: lighten;
+	background-size: 170px 200px;
+	}
+h4 {
+ font-family:Arial;
+}
+#toggleButton{width:150px}
+#randu1{display:inline-block;margin-right:10px;} 
+#randu2{display:inline-block;margin-right:10px;}
+#randu3{display:inline-block;margin-right:10px;}
+th{background-color:rgba(14, 85, 131,0.90);}
+
+</style>
+<body>
+
+
+
+
+<header class="w3-container" align="center" style="height:61px;width:100%;float:right;background-color:rgba(14, 85, 131,0.93);">
+	<i id="randu1" class="fa fa-cloud" style="font-size:47px;color:lightblue;"></i>
+    <h2 id="randu2" style="font-family:arial;color:White;text-align:center">Sistem de control și supraveghere</h2>
+	<i id="randu3" class="fa fa-car" style="font-size:40px;color:lightblue;"></i>
+
+</header>
+<!--<img src="https://www.tuv.com/media/romania/parteneri/Universitatea_Aurel_Vlaicu_Arad_TextwithImageflexible.jpg" style="width:70px;height:70px;float:left">-->
+
+
+<div class="w3-cell-row">
+
+	<div class="w3-container w3-cell w3-quarter" style="width:50%"> 
+		<h3 style="font-family:arial;font-style: italic;"><b>Control</b></h3>
+		
+		<h4>Sistem irigare</h4>
+		<div class="w3-bar">
+		<button class="w3-button w3-blue w3-ripple">ON</button>		
+		<button class="w3-button w3-ripple w3-red">OFF</button>
+		<button type="button" class="w3-button" style="background-color:gray;" id="toggleButton">Mod AUTO</button>
+		</div>
+		<br>
+		<h4>Iluminare casă</h4>
+		<div class="w3-bar">
+		<button type ="button" class="w3-button w3-green" id="buttonON">ON</button>
+		<button type ="button" class="w3-button w3-red" id="buttonOFF">OFF</button>
+		</div>
+		<br>
+		<h4>LED Pornit/Oprit</h4>
+		<div class="w3-bar">
+		<button type ="button" class="w3-button w3-green">ON</button>	
+		<button type ="button" class="w3-button w3-red">OFF</button>
+		</div>	
+		<br>
+		<h4>LED Pornit/Oprit</h4>
+		<div class="w3-bar">
+		<button type ="button" class="w3-button w3-green w3-ripple" id="buttonON">ON</button>  
+		<button type ="button" class="w3-button w3-red w3-ripple" id="buttonOFF">OFF</button>
+		<button type ="button" class="w3-button" style="background-color:gray;" id="">AUTO OFF</button>
+		</div>
+		<!-- DE AICI -->
+		<br>
+		<br>
+		<br>
+				<div>
+					<form id="tabelculaore" class="w3-container w3-card-4 w3-light-gray;" action="/action_page.php">
+					<p>
+					<h3>Setare Temperatură: </h3>
+					<p>
+					<label>Valorile admise sunt cuprinse între 18&deg;C și 30&deg;C!</label></p>					
+					<input class="w3-input w3-border w3-round w3-animate-input" type="text" style="width:22%;height:25%">
+					<p>
+					<button class="w3-btn w3-green" style="width:22%;height:20%">OK</button></p>
+					</form>
+				</div>
+		<br>	
+		<br>
+		<!-- Pana aici -->
+		
+	</div>
+	
+	<div class="w3-container w3-cell" style="width:50%">
+	<h3 style="font-family:arial;font-style: italic;"><b>Monitorizare</b></h3>
+	
+	<table class="w3-table w3-striped w3-border" style="width:50%">
+		<thead>
+		<tr style="color:white;">
+			<th>Senzor</th>
+			<th>Valoare</th>
+		</tr>
+		</thead>		
+		<tr>
+			<td>Temperatura: </td>
+			<td>50</td>
+		</tr>		
+		<tr>
+			<td>Umiditate</td>
+			<td>40</td>
+		</tr>	
+		<tr>
+			<td>Gaz</td>
+			<td>30</td>
+		</tr>
+	</table> 
+	
+	<!-- DE AICI -->
+	<br>
+	<br>
+			<h3 style="font-family:arial;font-style: italic;"><b>Securitate</b></h3>
+				<div class="w3-cell-row">
+				
+					<div class="w3-container w3-cell w3-quarter" style="width:50%">
+					<h5>Nivel 1</h5>
+					<img src="https://media.tenor.com/images/1badf93589e8d6b5a520238d792b68ab/tenor.gif" alt="Urmarire" style="width:280px;height:222px;">
+					
+					</div>
+										
+					<div class="w3-container w3-cell " style="width:50%">
+					<h5>Nivel 2</h5>
+					<img src="https://cdn.dribbble.com/users/330915/screenshots/3112152/maison_1_anim.gif" alt="Steal" style="width:300px;height:222px;">					
+					</div>
+					
+			
+				</div>
+	<!-- Pana aici -->
+	
+	
+
+	</div>
+</div>
+
+
+
+
+</body>
+</html> 
