@@ -10,5 +10,4 @@ Through this webpage you can control:
 -temperature
 -relays
 
-This is my first (a bit more complex) project using Arduino/Nodemcu. If you find any mistakes don't hesitate to tell me. 
 
